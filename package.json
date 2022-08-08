@@ -4,8 +4,14 @@
   "description": "SE Intern Assignment",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "start-server": "nodemon server.js"
   },
   "author": "Kavindu Perera",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "mongoose": "^6.5.1",
+    "nodemon": "^2.0.19"
+  }
 }
