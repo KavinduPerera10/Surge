@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import isEmpty from 'validator/lib/isEmpty';
 import isEmail from 'validator/lib/isEmail';
-import './SignUp.css';
 import {Link} from 'react-router-dom';
 import {showErrorMsg, showSuccessMsg} from '../helpers/message';
 import {showLoading} from '../helpers/loading';
@@ -13,7 +12,7 @@ const SignUp = () => {
         successMsg: false,
         errorMsg: false,
         loading: false,
-    })
+    });
     const {email, successMsg, errorMsg, loading} = formData;
 
     const handleChange = evt => {
